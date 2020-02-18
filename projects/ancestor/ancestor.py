@@ -59,6 +59,7 @@ def earliest_ancestor(ancestors, starting_node):
 
         # If the path is longer or equal and the value is smaller,
         # or if the path is longer:
+        # DO THE THING
         if (len(path) >= max_path_len and current_node < earliest_ancestor) or (len(path) > max_path_len):
             earliest_ancestor = current_node
             max_path_len = len(path)
@@ -69,7 +70,3 @@ def earliest_ancestor(ancestors, starting_node):
             queue.enqueue(path_copy)
 
     return earliest_ancestor
-
-
-
-
