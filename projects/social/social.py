@@ -183,3 +183,20 @@ if __name__ == '__main__':
     connections = sg.get_all_social_paths(1)
     print("---------Printing Connections----------")
     print(connections)
+
+# How would we find the average shortest path for all of the 
+# connections?
+
+# Given that we want to find the shortest path --> Breadth First
+# Given that we are looking for a path for "all" of the connections --> traversal
+# Therefore, we'll use BFT!
+
+# Find the shortest paths from all users to all of their connections.
+# Then divide by the number of paths.
+
+# PLAN 
+
+# Make a list to store all paths in.
+# Call get_all_social_paths for each user.
+# Average the result.
+
